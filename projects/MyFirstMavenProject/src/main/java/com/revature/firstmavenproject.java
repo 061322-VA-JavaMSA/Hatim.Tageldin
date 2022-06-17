@@ -44,7 +44,7 @@ public class firstmavenproject {
 				if(inputUser.equals(username) && inputPass.equals(password)) {
 					correct = true;
 				} else {
-					System.out.println("You have entered the wrong credentials, please try again");
+					System.out.println("Invaled credentials input, please try again");
 					correct = false;
 				}
 			} while (correct == false);
