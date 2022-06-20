@@ -5,13 +5,19 @@ import exceptions.DivideBy0Exception;
 public class Calculator {
 	/*
 	 * - add(int a, int b) - if the result is 13 - throw an exception -
+	 * 
 	 * Number13Exception - subtract - multiply - sum of an array - divide - throw a
 	 * custom exception if divided by 0
 	 */
+	
+
+	
 
 	public int add(int a, int b) {
 		return a + b;
 	}
+
+	
 
 	public int subtract(int a, int b) {
 		return a - b;
@@ -34,4 +40,18 @@ public class Calculator {
 
 		return sum;
 	}
+	
+	public int multiplyBy0Exception(int[] mulArr) {
+		int msum = 0;
+		int[] msum1 = {1, 2, 3};
+		for(int i : msum1) {
+			msum += i;
+		}
+		return 0;
+		
+	}
+	
+	
+
+	
 }

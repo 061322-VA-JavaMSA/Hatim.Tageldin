@@ -58,7 +58,7 @@ public class CalculatorTest {
 	@Test
 	public void subTenAndFive() {
 		int expected = 5;
-		int actual = sut.subtract(10, 5);
+		int actual = sut.subtract(5,10);
 
 		assertEquals(expected, actual);
 	}
