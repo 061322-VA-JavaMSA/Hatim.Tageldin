@@ -1,0 +1,38 @@
+drop table if exists members;
+create table if not exists members(
+id serial primary key,
+account_id serial,
+user_name varchar(30) unique not null,
+pass_word varchar(30) not null,
+full_name varchar(30),
+address varchar(30) not null,
+phone_number varchar(16),
+is_staff boolean,
+fee varchar(4)
+);
+
+drop table if exists book;
+create table if not exists book(
+id serial primary key,
+title varchar(30) unique not null,
+auth varchar(30),
+due_date date,
+account_id integer,
+genre varchar(20),
+checked_out boolean);
+
+drop table if exists staff;
+create table if not exists staff(
+id serial primary key,
+username varchar(30) unique not null,
+password varchar(30) not null,
+name varchar(30),
+address varchar(30) not null,
+phonenumber varchar(16));
+
+insert into book (title) values ('Anser caerulescens');
+insert into book (title) values ('Phaethon aethereus');
+insert into book (title) values ('Sitta canadensis');
+insert into book (title) values ('Nycticorax nycticorax');
+insert into book (title) values ('Phascolarctos cinereus');
+insert into book (title) values ('Nannopterum harrisi');
